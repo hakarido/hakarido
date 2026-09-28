@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+.coverage.*
+mutants/
+.mutmut-cache/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/

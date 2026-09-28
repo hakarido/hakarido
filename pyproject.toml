@@ -1,0 +1,28 @@
+[project]
+name = "hakarido-harness"
+version = "0.0.1"
+description = "AIが書いたコードを測って壊す週1ハーネス v0"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.coverage.run]
+source = ["src"]
+branch = false
+
+[tool.coverage.report]
+show_missing = true
+precision = 1
+
+# mutmut 3.8 の設定キー（paths_to_mutate / tests_dir は 3.8 で非推奨に置き換わった。2系は setup.cfg の [mutmut] で書式が違う）。
+# 初回に `mutmut run` を実行し、mutants/ が作られ対象が0件でないことを確認する。
+# Windows ネイティブでは mutmut 自身が起動を拒否する（WSL2 で動かす）。
+[tool.mutmut]
+source_paths = ["src"]
+pytest_add_cli_args_test_selection = ["tests/"]
+# mutmut は mutants/ を作業ディレクトリにしてテストを走らせ、source_paths 以外はコピーしない。
+# tests/ と pyproject.toml を also_copy で mutants/ に入れる（conftest.py も tests/ の中）。
+also_copy = ["tests/", "pyproject.toml"]
