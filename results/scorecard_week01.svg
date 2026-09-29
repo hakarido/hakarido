@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="480" viewBox="0 0 900 480">
+<rect width="900" height="480" fill="#f6f4ee"/>
+<rect x="24" y="24" width="852" height="432" rx="16" fill="#ffffff" stroke="#d8d2c2"/>
+<g font-family="Noto Sans CJK JP, Noto Sans JP, Segoe UI, Hiragino Sans, sans-serif">
+<text x="60" y="84" font-size="26" fill="#2f2e2a">week 01 · AI生成テストのみ</text>
+<text x="60" y="180" font-size="20" fill="#6b685f">行カバレッジ</text>
+<text x="60" y="270" font-size="84" font-weight="700" fill="#1f6f4a">100.0%</text>
+<text x="470" y="180" font-size="20" fill="#6b685f">ミューテーションスコア</text>
+<text x="470" y="270" font-size="84" font-weight="700" fill="#b23a2e">82.5%</text>
+<text x="60" y="340" font-size="19" fill="#2f2e2a">killed 160 / survived 34 / timeout 2 / suspicious 0   (mutmut 60s)</text>
+<text x="60" y="392" font-size="19" fill="#6b685f">claude-fable-5 · 2026-09-29</text>
+<text x="60" y="432" font-size="14" fill="#8a867a">score = killed ÷ (killed + survived)。timeout・suspicious は分母に含めない。n=1 の事例であり一般化しない。</text>
+</g>
+</svg>
