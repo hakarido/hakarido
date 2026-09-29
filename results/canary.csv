@@ -1,0 +1,2 @@
+﻿week,label,date,model,coverage_pct,mutants_total,killed,survived,timeout,suspicious,score_pct,mutmut_seconds,note
+01,canary,2026-09-29,claude-fable-5,100.0,196,152,41,3,0,78.8,,
