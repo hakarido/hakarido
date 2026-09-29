@@ -26,3 +26,6 @@ pytest_add_cli_args_test_selection = ["tests/"]
 # mutmut は mutants/ を作業ディレクトリにしてテストを走らせ、source_paths 以外はコピーしない。
 # tests/ と pyproject.toml を also_copy で mutants/ に入れる（conftest.py も tests/ の中）。
 also_copy = ["tests/", "pyproject.toml"]
+# テスト差し替え後にキャッシュ済みミュータント結果が再利用され、前回のスコアがそのまま出る事故があった
+# （week01 初回計測時に実測。0.00 mutations/second で 0 件実行のまま集計された）。依存変更時は必ず再実行する。
+on_dependency_change = "rerun"
