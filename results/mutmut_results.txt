@@ -1,0 +1,13 @@
+    target.xǁDateRangeǁ__post_init____mutmut_3: survived
+    target.x_merge_ranges__mutmut_18: survived
+    target.x_with_tax__mutmut_7: survived
+    target.x_with_tax__mutmut_12: survived
+    target.x_split_evenly__mutmut_4: survived
+    target.x_split_evenly__mutmut_9: survived
+    target.x_parse_csv_line__mutmut_5: survived
+    target.x_parse_csv_line__mutmut_9: survived
+    target.x_parse_csv_line__mutmut_19: survived
+    target.x_parse_csv_line__mutmut_28: timeout
+    target.x_parse_csv_line__mutmut_30: survived
+    target.x_parse_csv_line__mutmut_43: timeout
+    target.x_parse_csv_line__mutmut_47: survived
